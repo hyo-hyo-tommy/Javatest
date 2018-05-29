@@ -10,7 +10,7 @@
     <!-- MainTestのビルドに必要な情報 -->
     <property name="test.src" location="src/test/java"/>
     <property name="test.build" location="testbuild"/>
-    <property name="test.class.name" value="sample.MainTest" />
+    <property name="test.class.name" value="sample.CalcTest" />
     <path id="test.classpath">
         <pathelement location="${build}" />
         <pathelement location="${test.build}" />
@@ -44,7 +44,7 @@
         <!-- sample-yyyymmdd.jarという名前でjarファイルを作成 -->
         <jar jarfile="${dist}/sample-${DSTAMP}.jar" basedir="${build}">
             <manifest>
-                <attribute name="Main-Class" value="sample.Main" />
+                <attribute name="Main-Class" value="sample.Calc" />
             </manifest>
         </jar>
     </target>
